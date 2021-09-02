@@ -13,10 +13,11 @@ function loop() {
   //console.log(counter);
   counter++;
   numbers.unshift(counter);
-  console.log(numbers);
-  setTimeout(loop, 800);
 
   if (counter > 7) {
-    numbers.length = 8;
+    numbers.length = 9;
   }
+
+  console.log(numbers);
+  setTimeout(loop, 800);
 }
